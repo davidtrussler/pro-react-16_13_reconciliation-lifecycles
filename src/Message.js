@@ -12,7 +12,7 @@ export class Message extends Component {
 					{... this.props}
 				/>
 
-				<div className="h5 text-center p-2">
+				<div id="messageDiv" className="h5 text-center p-2">
 					{this.props.message}
 				</div>
 			</div>
