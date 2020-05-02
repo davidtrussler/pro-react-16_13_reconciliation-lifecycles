@@ -11,7 +11,7 @@ export class List extends Component {
 	}
 
 	reverseList = () => {
-		this.setState({names: this.state.reverse()}); 
+		this.setState({names: this.state.names.reverse()}); 
 	}
 
 	render() {
