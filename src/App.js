@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Message} from './Message'; 
+import {HooksMessage} from './HooksMessage'; 
 import {List} from './List'; 
 import {ExternalCounter} from './ExternalCounter'; 
 
@@ -40,11 +41,19 @@ export default class App extends Component {
 
             {
               this.state.showMessage &&
-              <Message
-                message={`Counter: ${this.state.counter}`}
-                callback={this.incrementCounter}
-                text='Increment Counter'
-              />
+              <div>
+                <Message
+                  message={`Counter: ${this.state.counter}`}
+                  callback={this.incrementCounter}
+                  text='Increment Counter'
+                />
+
+                <HooksMessage
+                  message={`Counter: ${this.state.counter}`}
+                  callback={this.incrementCounter}
+                  text='Increment Counter'
+                />
+              </div>
             }
           </div>
 
