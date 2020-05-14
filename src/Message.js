@@ -42,4 +42,8 @@ export class Message extends Component {
 			</div>
 		)
 	}
+
+	componentDidMount() {
+		console.log('componentDidMount Message Component'); 
+	}
 }

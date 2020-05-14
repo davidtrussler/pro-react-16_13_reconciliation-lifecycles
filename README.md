@@ -10,6 +10,8 @@ Work based on Chapter 13 of Pro React 16 by Adam Freeman
 
 ### [Explicitly-triggering-reconciliation](https://github.com/davidtrussler/pro-react-16_13_reconciliation-lifecycles/tree/Explicitly-triggering-reconciliation)
 
+### [Understanding-component-lifecycle](https://github.com/davidtrussler/pro-react-16_13_reconciliation-lifecycles/tree/Understanding-component-lifecycle)
+
 ***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
