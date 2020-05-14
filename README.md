@@ -12,6 +12,8 @@ Work based on Chapter 13 of Pro React 16 by Adam Freeman
 
 ### [Understanding-component-lifecycle](https://github.com/davidtrussler/pro-react-16_13_reconciliation-lifecycles/tree/Understanding-component-lifecycle)
 
+### [Using-Advanced-Lifecycle-Methods](https://github.com/davidtrussler/pro-react-16_13_reconciliation-lifecycles/tree/Using-Advanced-Lifecycle-Methods)
+
 ***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
