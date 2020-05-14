@@ -1,22 +1,17 @@
 import React, {Component} from 'react';
-import {Message} from './Message'; 
+import {DirectionDisplay} from './DirectionDisplay'; 
 
 export default class App extends Component {
   constructor(props) {
     super(props); 
 
     this.state = {
-      counterLeft: 0, 
-      counterRight: 0
+      counter: 100
     }
   }
 
-  incrementCounter = (counter) => {
-    if (counter === 'left') {
-      this.setState({counterLeft: this.state.counterLeft + 1}); 
-    } else {
-      this.setState({counterRight: this.state.counterRight + 1}); 
-    }
+  changeCounter = (val) => {
+    this.setState({counter: this.state.counter + val})
   }
 
   render() {
@@ -24,22 +19,22 @@ export default class App extends Component {
 
     return (
       <div className="container text-center">
-        <div className="row p-2">
-          <div className="col-6">
-            <Message
-              message={`left: ${this.state.counterLeft}`}
-              callback={() => this.incrementCounter('left')}
-              text='Increment Left Counter'
-            />
-          </div>
+        <DirectionDisplay value={this.state.counter}/>
 
-          <div className="col-6">
-            <Message
-              message={`right: ${this.state.counterRight}`}
-              callback={() => this.incrementCounter('right')}
-              text='Increment Right Counter'
-            />
-          </div>
+        <div className="text-center">
+          <button 
+            className="btn btn-primary m-1"
+            onClick={() => this.changeCounter(-1)}
+          >
+            Decrease
+          </button>
+
+          <button 
+            className="btn btn-primary m-1"
+            onClick={() => this.changeCounter(1)}
+          >
+            Increase
+          </button>
         </div>
       </div>
     )
