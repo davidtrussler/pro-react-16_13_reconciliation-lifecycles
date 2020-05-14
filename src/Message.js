@@ -50,4 +50,8 @@ export class Message extends Component {
 	componentDidUpdate() {
 		console.log('componentDidUpdate Message Component'); 
 	}
+
+	componentWillUnmount() {
+		console.log('componentWillUnmount Message Component'); 
+	}
 }
